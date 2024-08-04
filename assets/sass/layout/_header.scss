@@ -1,0 +1,57 @@
+.header {
+  @include flex-center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: $white;
+  border-bottom: 1px solid $isabelline;
+
+  &__logo {
+    img {
+      height: 2rem;  // Ajusta la altura de la imagen a 2rem
+    }
+  }
+
+  &__nav {
+    @include flex-center;
+    gap: 20px;
+  }
+
+  &__item {
+    font-size: $font-size-large;
+    color: $outer-space;
+    text-decoration: none;
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  &__buttons {
+    @include flex-center;
+    gap: 10px;
+
+    .btn--primary {
+      @extend .btn;
+      border: 1px solid $outer-space;
+      background: none;
+      color: $outer-space;
+
+      &:hover {
+        background: $outer-space;
+        color: $white;
+      }
+    }
+
+    .btn--secondary {
+      @extend .btn;
+      background-color: $shiny-shamrock;
+      color: $white;
+
+      &:hover {
+        background-color: darken($shiny-shamrock, 10%);
+      }
+    }
+  }
+}
+
+  

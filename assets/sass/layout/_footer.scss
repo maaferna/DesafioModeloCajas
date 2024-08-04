@@ -1,0 +1,17 @@
+.footer {
+    @include flex-center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: $white;
+    border-top: 1px solid $isabelline;
+  
+    &__logo {
+      font-size: $font-size-xxl;
+    }
+  
+    &__text {
+      font-size: $font-size-large;
+      color: $outer-space;
+    }
+  }
+  

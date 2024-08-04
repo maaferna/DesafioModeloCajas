@@ -1,0 +1,27 @@
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: $font-size-large;
+    cursor: pointer;
+  
+    &--primary {
+      background-color: transparent;
+      color: $outer-space;
+      border: 1px solid $outer-space;
+  
+      &:hover {
+        color: $black;
+      }
+    }
+  
+    &--secondary {
+      background-color: $shiny-shamrock;
+      color: $white;
+  
+      &:hover {
+        background-color: darken($shiny-shamrock, 10%);
+      }
+    }
+  }
+  

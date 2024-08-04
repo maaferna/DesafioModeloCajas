@@ -1,0 +1,228 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Mono", monospace;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #FFF;
+  border-bottom: 1px solid #EEEDED;
+}
+.header__logo img {
+  height: 2rem;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.header__item {
+  font-size: 18px;
+  color: #454545;
+  text-decoration: none;
+}
+.header__item:hover {
+  color: #000000;
+}
+.header__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.header__buttons .btn--primary {
+  border: 1px solid #454545;
+  background: none;
+  color: #454545;
+}
+.header__buttons .btn--primary:hover {
+  background: #454545;
+  color: #FFF;
+}
+.header__buttons .btn--secondary {
+  background-color: #4CA866;
+  color: #FFF;
+}
+.header__buttons .btn--secondary:hover {
+  background-color: #3c8551;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #FFF;
+  border-top: 1px solid #EEEDED;
+}
+.footer__logo {
+  font-size: 40px;
+}
+.footer__text {
+  font-size: 18px;
+  color: #454545;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #FFF;
+}
+.nav__item {
+  margin: 0 10px;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.btn, .header__buttons .btn--primary, .header__buttons .btn--secondary {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.btn--primary {
+  background-color: transparent;
+  color: #454545;
+  border: 1px solid #454545;
+}
+.btn--primary:hover {
+  color: #000000;
+}
+.btn--secondary {
+  background-color: #4CA866;
+  color: #FFF;
+}
+.btn--secondary:hover {
+  background-color: #3c8551;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.navbar__logo {
+  font-size: 40px;
+}
+.navbar__menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar__item {
+  font-size: 18px;
+  color: #454545;
+  text-decoration: none;
+}
+.navbar__item:hover {
+  color: #000000;
+}
+
+.home .banner {
+  height: 400px;
+  display: flex;
+}
+.home .banner__image {
+  background-image: url("../../assets/img/img-1.png");
+  background-size: cover;
+  background-position: center;
+  flex: 0 0 80%;
+}
+.home .banner__info {
+  background-color: #FFF;
+  flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  text-align: center;
+}
+.home .banner__title {
+  font-size: 70px;
+  margin: 0;
+}
+.home .banner__additional {
+  font-size: 30px;
+  color: #828282;
+}
+.home .features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 24px;
+}
+.home .features__item {
+  text-align: center;
+  font-size: 30px;
+}
+.home .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding: 24px;
+}
+.home .content__image {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .home .banner {
+    flex-direction: column;
+    height: auto;
+  }
+  .home .banner__image, .home .banner__info {
+    flex: 1 1 100%;
+  }
+  .home .banner__info {
+    padding: 8px;
+  }
+  .home .banner__title {
+    font-size: 30px;
+  }
+  .home .banner__additional {
+    font-size: 16px;
+  }
+  .home .features {
+    flex-direction: column;
+    padding: 16px;
+  }
+  .home .features__item {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .home .content {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+  .home .content__text {
+    margin-bottom: 16px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,26 @@
+.navbar {
+    @include flex-center;
+    justify-content: space-between;
+    padding: 20px;
+  
+    &__logo {
+      font-size: $font-size-xxl;
+    }
+  
+    &__menu {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+  
+    &__item {
+      font-size: $font-size-large;
+      color: $outer-space;
+      text-decoration: none;
+  
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+  
