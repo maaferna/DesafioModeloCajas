@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 1800;
+  font-weight: 800;
 }
 .home .banner__overlay-box {
   background-color: #F5E7A1;
@@ -276,14 +276,17 @@ h1, h2, h3, h4, h5, h6 {
 .home .content__text {
   grid-column: span 4;
   padding: 16px;
+  margin: 40px;
 }
 .home .content__text h2 {
   font-size: 40px;
   margin-bottom: 8px;
+  color: #5FA5EA;
 }
 .home .content__text p {
-  font-size: 16px;
+  font-size: 18px;
   color: #828282;
+  color: #5FA5EA;
 }
 .home .content__map-container {
   grid-column: span 4;
@@ -311,12 +314,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 .home .content__image-container {
   grid-column: span 4;
+  position: relative;
 }
 .home .content__image-container .content__image {
   width: 100%;
   height: auto;
   display: block;
   margin-left: 50px;
+}
+.home .content__image-container .content__overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 60%;
+  width: 160px;
+  object-fit: cover;
 }
 @media (max-width: 768px) {
   .home .banner {

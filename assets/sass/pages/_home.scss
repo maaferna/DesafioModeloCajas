@@ -6,14 +6,14 @@
   .banner {
     height: 400px;
     display: flex;
-    position: relative; // Importante para posicionar el contenedor adicional
+    position: relative; 
 
     &__image {
       background-image: url('../../assets/img/img-1.png');
       background-size: cover;
       background-position: center;
       flex: 0 0 80%;
-      position: relative; // Importante para posicionar el contenedor adicional
+      position: relative; 
     }
 
     .features {
@@ -112,7 +112,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-weight: 1800;
+        font-weight: 800;
       }
     }
 
@@ -151,13 +151,16 @@
     &__text {
         grid-column: span 4;
         padding: $spacing-md;
+        margin: 40px;
         h2 {
             font-size: $font-size-xxl;
             margin-bottom: $spacing-sm;
+            color: $blue-jeans;
         }
         p {
-            font-size: $font-size-md;
+            font-size: $font-size-large;
             color: $text-muted-color;
+            color: $blue-jeans;
         }
     }
 
@@ -191,15 +194,25 @@
 
     &__image-container {
         grid-column: span 4;
+        position: relative;
         .content__image {
             width: 100%;
             height: auto;
             display: block;
             margin-left: 50px;
         }
+        .content__overlay-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            height: 60%;
+            width: 160px;
+            object-fit: cover; 
+ 
+        }
     }
-}
-
+  }
 
   @media (max-width: 768px) {
     .banner {
