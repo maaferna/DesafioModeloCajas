@@ -1,17 +1,19 @@
 .header {
-  @include flex-center;
-  justify-content: space-between;
   padding: 20px;
   background-color: $white;
   border-bottom: 1px solid $isabelline;
+  overflow: hidden;  
 
   &__logo {
+    float: left; 
+
     img {
-      height: 2rem;  // Ajusta la altura de la imagen a 2rem
+      height: 2rem;  
     }
   }
 
   &__nav {
+    float: right;  
     @include flex-center;
     gap: 20px;
   }
@@ -27,6 +29,7 @@
   }
 
   &__buttons {
+    clear: both; 
     @include flex-center;
     gap: 10px;
 
@@ -52,6 +55,10 @@
       }
     }
   }
-}
 
-  
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
